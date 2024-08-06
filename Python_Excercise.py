@@ -248,7 +248,7 @@ else:
 
 '''
 ################################################################
-# 20. Program to check Armstrong Number
+# 17. Program to check Armstrong Number
 # Solution: ARmstrong number means assume
 # 153 is armstrong number how bcz: 153 = (1*1*1)+(5*5*5)+(3*3*3) = 153
 # SOlution: (for 3 digit armstrong number only)
@@ -285,7 +285,7 @@ else:print("Given number is not an Armstrong number")
 
 ################################################################
 
-# 21. Program to find armstrong number in an interval
+# 18. Program to find armstrong number in an interval
 # Solution:
 
 '''
@@ -306,4 +306,4 @@ for num in range(lower,upper+1):
 '''
 
 #######################################################
-# 22.
+# 19.
