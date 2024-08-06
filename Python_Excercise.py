@@ -251,4 +251,59 @@ else:
 # 20. Program to check Armstrong Number
 # Solution: ARmstrong number means assume
 # 153 is armstrong number how bcz: 153 = (1*1*1)+(5*5*5)+(3*3*3) = 153
+# SOlution: (for 3 digit armstrong number only)
+'''
+num = int(input("ENeter a number here: "))
+sum = 0
+temp = num
 
+while temp > 0:
+    digit = temp % 10  # last digit of given number will generate as output
+    cube = digit ** 3 # Taking qube of last digit of given number
+    sum = sum + cube # adding last digit cube with other digits cubes
+    temp //=10 # here by using float division removing last digit
+if sum == num:
+    print("given number is Armstrong number")
+else:print("Given number is not an Armstrong number")
+'''
+# Solution 2: may be it will 4 or 5 digit number so we will use len function
+'''
+num = int(input("ENeter a number here: "))
+sum = 0
+temp = num
+order = len(str(num))
+
+while temp > 0:
+    digit = temp % 10  # last digit of given number will generate as output
+    cube = digit ** order # with respect length of number here we will take power of the last digit number
+    sum = sum + cube # adding last digit cube with other digits cubes
+    temp //=10 # here by using float division removing last digit
+if sum == num:
+    print("given number is Armstrong number")
+else:print("Given number is not an Armstrong number")
+'''
+
+################################################################
+
+# 21. Program to find armstrong number in an interval
+# Solution:
+
+'''
+lower = int(input("Enter the lower limit here: "))
+upper = int(input("Enter the upper limit here: "))
+
+
+for num in range(lower,upper+1):
+    temp=num
+    sum = 0
+    order = len(str(temp))
+    while temp > 0:
+        digit = temp % 10
+        sum += digit ** order
+        temp //=10
+    if sum == num:
+        print(num)
+'''
+
+#######################################################
+# 22.
